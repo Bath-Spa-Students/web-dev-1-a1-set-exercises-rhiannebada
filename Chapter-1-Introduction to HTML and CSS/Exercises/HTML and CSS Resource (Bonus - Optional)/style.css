@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
+    font-size: medium;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0; /* padding:t op */
+}
+
+header {
+    background-color: #333; /* header background style */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* text will be center-aligned */
+    margin-bottom: 20px; /* margin below to make space even */
+}
+
+.definition { /* style under  <div class = "definition"> */
+    text-align: justify; 
+    text-indent: 30px;
+    margin: 30px;
+    flex-wrap: wrap; /* auto next line for text when window/tab size is adjusted */
+
+}
+
+.html, .css { /* style of codes both under <div class = "html"> and <div class = "css"> */
+    background-color: #455c47; /* background color for banner, dark green */
+    color: #fff;
+    text-align: center;
+    padding: 20px
+}
+
+section { /* all under <section> follows and displays this style */
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px; /* to round the corners a little */
+    box-shadow: 0 2px 4px #0000001a; /* adds shadow effect */
+}
+
+
+ul { /* unordered list */
+    margin-top: 00px;
+    padding-left: 0;
+}
+
+ul li { /* under unordered list and <list> */
+    margin-bottom: 0px;
+    color: #333;
+    border-bottom: 1px solid #333; /* adds border; to separate and make output more organised */
+    padding-bottom: 10px;
+}
+
+li {
+    text-indent: 50px;
+}
+
+code { 
+    background-color: #e9f3ea;
+    padding: 2px 4px; 
+    padding-left: 0;
+    border-radius: 5px; /* rounded corner */
+    font-family: 'Montserrat', sans-serif; /* sets font */
+}
+
+pre {
+    background-color: #e9f3ea;
+    padding: 10px;
+    padding-left: 0;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+mark { /* all that's marked will follow this styling */
+    background-color: #ffffff;
+    color: black;
+}
+
+a, b { /* all that has a and b tags will follow this styling */
+    color: #54783d;
+}
+
+footer {
+    margin: 30px;
+    font-size: small;
+}
