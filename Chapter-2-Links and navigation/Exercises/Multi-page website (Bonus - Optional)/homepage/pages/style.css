@@ -1,0 +1,179 @@
+body {
+    background-color: #1f1f1f;
+    font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
+    color: white;
+}
+
+nav {
+    position: fixed;
+    background-color: #1f1f1f;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  nav ul li {
+    float: left;
+    position: relative; /* Added to ensure the dropdown is positioned correctly */
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #bb85d2;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #313131;
+    min-width: 160px;
+    z-index: 1; /* Added to ensure the dropdown is above other content */
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  /* Adjusted selector to target only the dropdown content of the hovered item */
+  nav ul li:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Adjusted selector to target only the dropdown content of the hovered item */
+  nav ul li:hover .dropdown-content a:hover {
+    background-color: #85d289;
+  }
+  
+  .heading {
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  .heading p {
+    margin-bottom: 5px;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+.play-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bb85d2; /* Adjust button color as needed */
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px; /* Adjust margin as needed */
+    font-size: 18px;
+  }
+  
+  .play-button:hover {
+    background-color: #85d289; /* Adjust hover color as needed */
+  }
+  
+  .about {
+    text-align: left;
+    margin: 20px;
+    color: white;
+    background-color: #353535;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add border for each episode box */
+  }
+
+  .about h2 {
+    margin-top: 0;
+  }
+
+  hr {
+    color: #bb85d2;
+  }
+
+  h3 { 
+    margin-left: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .episodes {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .episodes p {
+    font-size: small;
+  }
+
+/* style.css */
+.episodes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .episode {
+    width: calc(31% - 21px); /* Adjust width as needed */
+    margin: 10px;
+    padding: 10px;
+    background-color: #353535; /* Default background color */
+    border: 1px solid #ccc; /* Add border for each episode box */
+    text-decoration: none;
+  }
+
+  .episode h4 {
+    display: inline-block
+  }
+
+  .episode small {
+    display: inline-block;
+    text-align: right;
+    color: #85d289;
+    font-size: 0.6rem;
+  }
+  
+  .play {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    background-color: #bb85d2; /* Adjust button color as needed */
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px; /* Adjust margin as needed */
+    font-size: 18px;
+    border-radius: 100px;
+  }
+  
+  .play:hover {
+    background-color: #85d289; /* Adjust hover color as needed */
+  }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 0;
+    text-align: center;
+    z-index: 1000;
+}
