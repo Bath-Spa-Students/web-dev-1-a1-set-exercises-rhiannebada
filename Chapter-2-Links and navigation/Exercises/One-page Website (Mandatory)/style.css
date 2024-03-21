@@ -29,7 +29,7 @@ nav ul {
   nav ul li a {
     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -93,7 +93,7 @@ nav ul {
     background-color: #85d289; /* Adjust hover color as needed */
   }
   
-  .about {
+  .overview {
     text-align: left;
     margin: 20px;
     color: white;
@@ -103,7 +103,7 @@ nav ul {
     text-align: justify;
   }
 
-  .about h2 {
+  .overview h2, .team h2 {
     margin-top: 0;
   }
 
@@ -116,24 +116,63 @@ nav ul {
     font-size: 1.5rem;
     text-align: center;
   }
-  .episodes {
+
+  #casts {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  #casts p {
+    font-size: small;
+  }
+
+  #casts h5 {
+    margin:0px;
+    color: #85d289;
+  }
+
+  #cast {
+    text-align: left;
+    margin: 12px;
+    padding: 20px;
+    width: calc(29% - 10px); /* Adjust width as needed */
+    background-color: #353535; /* Default background color */
+    border: 1px solid #ccc; /* Add border for each episode box */
+    text-decoration: none;
+  }
+
+  #team {
+    text-align: left;
+    margin: 20px;
+    color: white;
+    background-color: #353535;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add border for each episode box */
+    text-align: justify;
+  }
+
+  #episodes {
     text-align: left;
     margin: 20px;
     padding: 20px;
   }
 
-  .episodes p {
+  #episodes p {
     font-size: small;
   }
 
-/* style.css */
-.episodes {
+
+#episodes {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
   
-  .episode {
+  #episode {
     width: calc(31% - 21px); /* Adjust width as needed */
     margin: 10px;
     padding: 10px;
@@ -142,16 +181,21 @@ nav ul {
     text-decoration: none;
   }
 
-  .episode h4 {
+  #episode, h4 {
     display: inline-block
   }
 
-  .episode small {
+  #cast {
+    display: inline-block
+  }
+
+  #episode small {
     display: inline-block;
     text-align: right;
     color: #85d289;
     font-size: 0.6rem;
   }
+  
   
   .play {
     display: inline-block;
@@ -168,6 +212,17 @@ nav ul {
     background-color: #85d289; /* Adjust hover color as needed */
   }
 
+#reviews { /* all under <section> follows and displays this style */
+    background-color: #353535; /* Default background color */
+    padding: 20px;
+    margin: 20px;
+    text-align: justify;
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+
 footer {
     position: fixed;
     bottom: 0;
@@ -177,4 +232,24 @@ footer {
     padding: 0;
     text-align: center;
     z-index: 1000;
+}
+
+.back-to-top {
+  color: #bb85d2;
+  text-decoration: none;
+  margin: 20px
+}
+
+.back-to-top.show {
+  display: inline-block;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
+  color: #85d289;
+}
+
+.back-to-top:before {
+  content: "\25B2"; /* Unicode character for up arrow */
+  margin-right: 5px;
 }
