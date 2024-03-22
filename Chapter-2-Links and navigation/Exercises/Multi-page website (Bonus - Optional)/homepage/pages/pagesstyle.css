@@ -91,8 +91,15 @@ nav ul {
     background-color: #85d289; /* Adjust hover color as needed */
   }
 
+  hr {
+    color: #bb85d2;
+  }
 
-
+  h3 { 
+    margin-left: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
 footer {
     position: fixed;
@@ -104,3 +111,146 @@ footer {
     text-align: center;
     z-index: 1000;
 }
+
+#casts {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#casts p {
+  font-size: small;
+  text-align: left;
+}
+
+#casts h5 {
+  margin:0px;
+  color: #85d289;
+}
+
+#cast {
+  text-align: left;
+  margin: 12px;
+  padding: 20px;
+  width: calc(29% - 10px); /* Adjust width as needed */
+  background-color: #353535; /* Default background color */
+  border: 1px solid #ccc; /* Add border for each episode box */
+  text-decoration: none;
+}
+
+#team {
+  text-align: center;
+  margin: 20px;
+  color: white;
+  background-color: #353535;
+  padding: 20px;
+  border: 1px solid #ccc; /* Add border for each episode box */
+  text-align: justify;
+}
+
+#team p {
+  text-align: center;
+}
+
+#team h2 {
+  text-align: center;
+}
+
+#episodes {
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+}
+
+#episodes p {
+  font-size: small;
+}
+
+
+#episodes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#episode {
+  width: calc(31% - 21px); /* Adjust width as needed */
+  margin: 10px;
+  padding: 10px;
+  background-color: #353535; /* Default background color */
+  border: 1px solid #ccc; /* Add border for each episode box */
+  text-decoration: none;
+}
+
+#episode, h4 {
+  display: inline-block
+}
+
+#cast {
+  display: inline-block
+}
+
+#episode small {
+  display: inline-block;
+  text-align: right;
+  color: #85d289;
+  font-size: 0.6rem;
+}
+
+#episodes p {
+  font-size: small;
+  text-align: left;
+}
+
+.play {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  background-color: #bb85d2; /* Adjust button color as needed */
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px; /* Adjust margin as needed */
+  font-size: 18px;
+  border-radius: 100px;
+}
+
+.play:hover {
+  background-color: #85d289; /* Adjust hover color as needed */
+}
+
+#reviews { /* all under <section> follows and displays this style */
+  background-color: #353535; /* Default background color */
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+  color: #ffffff;
+  padding-bottom: 10px;
+  font-size: small;
+}
+
+#reviews p {
+  font-size: small;
+  text-align: left;
+}
+
+.back {
+  color: #bb85d2;
+  text-decoration: none;
+  margin: 20px
+  }
+  
+  .back.show {
+  display: inline-block;
+  }
+  
+  .back:hover {
+  text-decoration: underline;
+  color: #85d289;
+  }
+  
+  .back:before {
+  content: "\25B2"; /* Unicode character for up arrow */
+  margin-right: 5px;
+  }
