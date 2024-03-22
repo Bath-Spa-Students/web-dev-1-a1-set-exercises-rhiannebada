@@ -146,13 +146,21 @@ nav ul {
   }
 
   #team {
-    text-align: left;
+    text-align: center;
     margin: 20px;
     color: white;
     background-color: #353535;
     padding: 20px;
     border: 1px solid #ccc; /* Add border for each episode box */
     text-align: justify;
+  }
+  
+  #team p {
+    text-align: center;
+  }
+  
+  #team h2 {
+    text-align: center;
   }
 
   #episodes {
@@ -234,22 +242,22 @@ footer {
     z-index: 1000;
 }
 
-.back-to-top {
+.back {
   color: #bb85d2;
   text-decoration: none;
   margin: 20px
 }
 
-.back-to-top.show {
+.back.show {
   display: inline-block;
 }
 
-.back-to-top:hover {
+.back:hover {
   text-decoration: underline;
   color: #85d289;
 }
 
-.back-to-top:before {
+.back:before {
   content: "\25B2"; /* Unicode character for up arrow */
   margin-right: 5px;
 }
