@@ -2,32 +2,37 @@
 
 ## HTML Essential Training (Lynda)
 
-### Chapter 8: Putting It All Together ()
+### Chapter 5: Images and Graphics
 
-- Document Head (5m 1s)
-- Structuring content (4m 14s)
-- Examples of putting it all together (1m 6s)
+* Images (4m 12s)
+* Image formats (4m 48s)
+* Figure and figcaption (1m 15s)
+
+## CSS Essential Training (Lynda)
+
+### Chapter 3: The Box Model
+
+* Introduction to the box model (1m 7s)
+* Inline, block and display (3m 6s)
+* The box model properties (2m 6s)
+* Padding, margin and border (5m 34s)
 
 ## MDN Web Docs
 
-- [Document and website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
-- [What is accessibility?](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility)
-- [HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
-- [Normal flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
-- [Floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats)
-- [Positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+* [Images in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML)
+* [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders)
+* [Advanced styling effects](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Advanced_styling_effects)
+* [Using CSS gradients](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients)
 
 ## W3Schools
 
-- [HTML Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
-- [CSS Navigation Bar](https://www.w3schools.com/css/css_navbar.asp)
-- [CSS Dropdowns](https://www.w3schools.com/css/css_dropdowns.asp)
+* [CSS Image Gallery](https://www.w3schools.com/css/css_image_gallery.asp)
+* [CSS Image Sprites](https://www.w3schools.com/css/css_image_sprites.asp)
+* [CSS 2D Transforms](https://www.w3schools.com/css/css3_2dtransforms.asp)
+* [CSS 3D Transforms](https://www.w3schools.com/css/css3_3dtransforms.asp)
+* [CSS Transitions](https://www.w3schools.com/css/css3_transitions.asp)
+* [CSS Animations](https://www.w3schools.com/css/css3_animations.asp)
 
-## freeCodeCamp
+## Elementor
 
-- [What is a Wireframe?](https://www.freecodecamp.org/news/what-is-a-wireframe-ux-design-tutorial-website/)
-- [Fundamental design principles for non-designers](https://www.freecodecamp.org/news/fundamental-design-principles-for-non-designers-ad34c30caa7/)
-
-## Hubspot
-
-- [The Beginner's Guide to Typography in Web Design](https://blog.hubspot.com/website/website-typography)
+* [Color Theory Fundamentals...](https://elementor.com/blog/color-theory-web-design/)
