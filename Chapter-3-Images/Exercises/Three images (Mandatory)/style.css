@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
+    background-color: rgb(232, 232, 229);
+}
+
+header {
+    text-align: center;
+    background-color: rgb(139, 184, 208);
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+}
+
+h3 {
+    color: rgb(139, 184, 208);
+}
+
+hr {
+    color: rgb(139, 184, 208);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img {
+    border: solid 4px;
+    border-color: rgb(139, 184, 208);
+}
+
+figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.filter1, .filter2, .filter3 {
+    text-align: center;
+}
+
+.original img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+.filter1 img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    margin: 20px;
+}
+
+.filter2 img {
+    max-width: 100%;
+    height: auto;
+    filter: invert(80%);
+    margin: 20px;
+}
+
+.filter3 img {
+    max-width: 100%;
+    height: auto;
+    filter: sepia(80%);
+    margin: 20px;
+}
