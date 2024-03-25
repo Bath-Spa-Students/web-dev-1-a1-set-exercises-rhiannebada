@@ -9,6 +9,7 @@ body {
 
 header {
     background-color:#E1C7C7;
+    font-family: 'Galada', cursive;
     color: white;
     text-align: center;
     padding-left: 20px;
@@ -19,7 +20,6 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 10px 0;
 }
 
 .modules hr {
