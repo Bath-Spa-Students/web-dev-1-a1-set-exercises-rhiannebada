@@ -1,8 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
     margin: 0px;
-    background-color:#E9E9E9;
+    background-color:rgb(233, 233, 233, 0.5);
     padding: 0;
+    background-image: url(background.png); 
+    background-size:contain;
 }
 
 header {
@@ -12,6 +14,12 @@ header {
     padding-left: 20px;
     padding-top: 2px;
     padding-bottom: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
 .modules hr {
@@ -109,6 +117,11 @@ nav ul li a {
     margin-right: 10px;
     margin-left: 10px;
     color: #B2CAB1;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    color: black;
 }
 
 .notes {
@@ -232,4 +245,17 @@ caption {
 
 caption {
     color:rgb(165, 73, 73);
+}
+
+footer {
+    background-color: #E1C7C7;
+    font-size: small;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
