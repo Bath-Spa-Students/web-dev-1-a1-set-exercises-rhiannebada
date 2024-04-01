@@ -48,6 +48,7 @@ ul li { /* under unordered list and <list> */
     color: #333;
     border-bottom: 1px solid #333; /* adds border; to separate and make output more organised */
     padding-bottom: 10px;
+    list-style: none;
 }
 
 li {
