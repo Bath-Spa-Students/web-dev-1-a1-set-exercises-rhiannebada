@@ -1,0 +1,92 @@
+body {
+    background-color:aliceblue;
+    font-family: 'Roboto Condensed Light', sans-serif;
+    color: black;
+    text-align: center;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header {
+    margin: 30px;
+    padding: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    background-color: #e7d560;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgb(66, 66, 66);
+  }
+  
+  .soundboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: rgb(251, 248, 231, 0.7);
+    border-radius: 5px;
+    padding: 30px;
+    margin-right: 40px;
+    width: 1000px;
+    box-shadow: 0px 2px 4px rgb(66, 66, 66);
+  }
+  
+  .soundboard-container {
+    background-color: #ebe185;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgb(66, 66, 66);
+    cursor: pointer;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  .soundboard-container:hover {
+    border: 3px solid #a46fa3;
+  }
+  
+  .button:hover {
+    background-color: #fbe7f3;
+  }
+  
+  .button {
+    display: block;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    font-size: medium;
+    background-color: #fbe7f3;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .text-to-speech {
+    flex: 1;
+    margin-right: 30px;
+    margin-left: 60px;
+    text-align: left;
+    top: 20px;
+    max-width: 300px;
+    background-color: rgb(251, 248, 231, 0.7);
+    box-shadow: 0px 2px 4px rgb(66, 66, 66);
+    padding: 30px;
+    border-radius: 5px;
+  }
+
+  .text-to-speech button {
+    display: block;
+    background-color: #ebe185;
+    box-shadow: 0px 2px 4px rgb(66, 66, 66);  
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+  }
