@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Partridge Soundboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@100..900&display=swap" rel="stylesheet"> <!--imported font-->
+    <link rel="stylesheet" href="style.css"> <!--external stylesheet-->
+</head>
+<body>
+    <div class="header"> <!--heading; title of the soundboard-->
+        <h1>Audio Sampler</h1>
+    </div>
+
+    <div class="container">
+        <div class="text-to-speech">
+            <textarea id="text-to-speech-input" placeholder="Type here"></textarea>
+            <button id="text-to-speech-button">Convert to Sound</button>
+        </div>
+
+    <!--soundboard section-->
+    <div class="soundboard">
+        <!--each soundboard container represents a clickable audio with a specific associated sound/audio-->
+        <!--<p> displays the name of the sound/audio-->
+        <!--<audio src> stores audio element for the sound to be played-->
+        <div class="soundboard-container"><p>Ah-ha</p> <audio class="audio" src="Audio Sampler/Audio/ah-ha.mp3"></audio></div> 
+        <div class="soundboard-container"><p>Back of the Net</p> <audio class="audio" src="Audio Sampler/Audio/back-of-the-net.mp3"></audio></div>
+        <div class="soundboard-container"><p>Bang Out of Order</p> <audio class="audio" src="Audio Sampler/Audio/bangoutoforder.mp3"></audio></div>
+        <div class="soundboard-container"><p>Dan</p> <audio class="audio" src="Audio Sampler/Audio/dan.mp3"></audio></div>
+        <div class="soundboard-container"><p>Email of the Evening</p> <audio class="audio" src="Audio Sampler/Audio/emailoftheevening.mp3"></audio></div>
+        <div class="soundboard-container"><p>Hello Partridge</p> <audio class="audio" src="Audio Sampler/Audio/hellopartridge.mp3"></audio></div>
+        <div class="soundboard-container"><p>I Ate a Scotchegg</p> <audio class="audio" src="Audio Sampler/Audio/iateascotchegg.mp3"></audio></div>
+        <div class="soundboard-container"><p>I'm Confused</p> <audio class="audio" src="Audio Sampler/Audio/imconfused.mp3"></audio></div>
+    </div>
+
+    <script src="script.js"></script> <!--external javascript-->
+</body>
+</html> 
