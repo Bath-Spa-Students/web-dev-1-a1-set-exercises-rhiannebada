@@ -1,0 +1,41 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
+    display: flex;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 150px;
+    width: 100%;
+    position: fixed;
+    background-color: #0A7FD1;
+    box-shadow: 0 2px 4px rgb(89, 89, 89);
+    max-width: 660px;
+    color: white;
+    border: 3px solid rgb(207, 50, 50);
+}
+
+.calculator {
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 20px;
+    box-shadow: 0 2px 4px rgb(89, 89, 89);
+    margin-top: 250px;
+    position: fixed;
+}
+
+button {
+    background-color: #77C522;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgb(89, 89, 89);
+}
+
+button:hover {
+    background-color: #EDA912;
+}
