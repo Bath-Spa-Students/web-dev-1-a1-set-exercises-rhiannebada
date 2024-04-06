@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!--external stylesheet-->
+
+</head>
+<body>
+
+    <header>
+        <h2>Petrol Calculator</h2>
+    </header>
+
+    <div class="calculator">
+        <br>
+        <label for="petrol_cost">Cost per liter:</label>
+        <input type="number" id="petrol_cost" step="0.01" value="1.72">
+        <label for="liters">Liters purchased:</label>
+        <input type="number" id="liters" step="0.01" value="0">
+        <button onclick="calculate_total()">Calculate</button>
+        <p id="total_cost">Total cost: $ 0.00</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
