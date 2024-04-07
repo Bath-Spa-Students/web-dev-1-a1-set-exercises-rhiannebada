@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>RGB Color Guessing Game</h1>
+        <div id="game-container">
+            <b><div id="rgb-display"></div></b>
+            <div id="options"></div>
+            <div id="feedback"></div>
+            <div id="lives"></div>
+        </div>
+    
+        <div id="game-over" style="display: none;"><small>Game Over! Your final score: <span id="final-score"></span></small></div> <!-- Added game over message -->
+
+        <div>
+            <button id="replay-btn" onclick="startGame()">Play Again</button>
+            <button id="end-btn" onclick="endGame()">End Game</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
