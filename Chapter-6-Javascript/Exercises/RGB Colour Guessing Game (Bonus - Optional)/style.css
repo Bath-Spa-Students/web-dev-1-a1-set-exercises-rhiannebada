@@ -2,7 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
     text-align: center;
     background-color: #eeeeee;
-    background-image: url('3.jpg');
+    background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
