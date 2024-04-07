@@ -1,59 +1,58 @@
 body {
-    font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
-    text-align: center;
-    background-color: #eeeeee;
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: 'Montserrat', sans-serif; /*text inside body will all be montserrat*/
+    text-align: center; /*center aligns text*/
+    background-image: url('background.jpg'); /*link to background image*/
+    background-repeat: no-repeat; /*prevents background image from repeating*/
+    background-size: cover; /*scales background image to cover entire body*/
 }
 
-#container {
-    margin: 300px auto;
-    max-width: 600px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.5s ease-out;
-    border-radius: 5px;
-    height: auto;
+#container { /*style contents of the game*/
+    margin: 300px auto; /*sets margin to center vertically and have space from the top*/
+    max-width: 600px; /*maximum width of the container*/
+    background-color: #f9f9f9; /*background color*/
+    padding: 20px; /*padding inside the container*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*adds shadow effect to container*/
+    animation: fadeIn 0.5s ease-out; /*fade in animation*/
+    border-radius: 5px; /*rounded corners*/
+    height: auto; /*automatically adjusts heigh to container*/
 
 }
 
-h1 {
-    margin-bottom: 20px;
+h1 { /*style heading*/
+    margin-bottom: 20px; /*adds margin at the bottom*/
 }
 
-#rgb-display {
+#rgb-display { /*style for the displayed generated rgb codes that players will guess*/
     margin: 20px 0;
-    animation: slideInDown 0.5s ease-out;
-    color: white;
-    background-color: burlywood;
+    animation: slideInDown 0.5s ease-out; /*slide in down animation*/
+    color: white; /*color of text*/
+    background-color: burlywood; 
     padding: 5px;
     border-radius: 5px;
 }
 
-button {
+button { /*style for buttons*/
     padding: 10px 20px;
     margin-top: 50px;
     margin: 0 auto;
-    cursor: pointer;
+    cursor: pointer; /*sets cursor to pointer*/
     background-color: burlywood;
     color: white;
-    border: none;
+    border: none; /*removes border*/
     border-radius: 5px;
-    transition: background-color 0.2s ease-out;
-    display: block;
+    transition: background-color 0.2s ease-out; /*transition effect to background colour*/
+    display: block; /*displays buttons as block elements, no contents displayed beside*/
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /*changes background colour on hover*/
 }
 
-#options {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    animation: slideInUp 0.5s ease-out;
+#options { /*style for generated colour options*/
+    margin: 20px 0; /*margin above and below*/
+    display: flex; /*flexbox for layout*/
+    justify-content: center; /*center aligns the options*/
+    animation: slideInUp 0.5s ease-out; /*slide in animation*/
 }
 
 .option {
@@ -61,37 +60,35 @@ button:hover {
     padding: 40px 80px;
     cursor: pointer;
     border-radius: 5px;
-    transition: transform 0.2s ease-out;
-    background-color: #557da8;
-    color: white;
+    transition: transform 0.2s ease-out; /*transition effect*/
 }
 
 .option:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /*increases size of options on hover*/
 }
 
-#feedback {
+#feedback { /*style feedback message*/
     margin-top: 20px;
-    font-weight: 700;
+    font-weight: 700; /*sets font weight to bold*/
     animation: fadeIn 0.5s ease-out;
 }
 
-#lives {
+#lives { /*style for lives message*/
     margin-top: 20px;
     font-weight: 700;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn { /*starts with 0 opacity to 1*/
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-@keyframes slideInDown {
+@keyframes slideInDown { /*slide in from top to fade in*/
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
 
-@keyframes slideInDown {
+@keyframes slideInDown { /*slide in from bottom and fade in*/
     from { transform: translateY(50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
