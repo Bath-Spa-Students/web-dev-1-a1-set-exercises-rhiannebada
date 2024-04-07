@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGB Color Guessing Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!--external stylesheet-->
 </head>
 <body>
-    <div id="container">
-        <h1>RGB Color Guessing Game</h1>
+    <div id="container"> 
+        <h1>RGB Color Guessing Game</h1> <!--heading; title of the game-->
         <div id="game-container">
-            <b><div id="rgb-display"></div></b>
-            <div id="options"></div>
-            <div id="feedback"></div>
-            <div id="lives"></div>
+            <b><div id="rgb-display"></div></b> <!--displays generated random rgb colour code-->
+            <div id="options"></div> <!--colour options-->
+            <div id="feedback"></div> <!--displays feedback message (correct/incorrect)-->
+            <div id="lives"></div> <!--displays remaining lives-->
         </div>
     
-        <div id="game-over" style="display: none;"><small>Game Over! Your final score: <span id="final-score"></span></small></div> <!-- Added game over message -->
+        <div id="game-over" style="display: none;"> <!--game over message; 'display: none;'' to hide-->
+            <small>Game Over! Your final score: <span id="final-score"></span></small> <!--game over message with final score-->
+        </div>
 
         <div>
-            <button id="replay-btn" onclick="startGame()">Play Again</button>
-            <button id="end-btn" onclick="endGame()">End Game</button>
+            <button id="replay-btn" onclick="startGame()">Play Again</button> <!--button to play again-->
+            <button id="end-btn" onclick="endGame()">End Game</button> <!--button to end game-->
         </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--external javascript-->
 </body>
 </html>
