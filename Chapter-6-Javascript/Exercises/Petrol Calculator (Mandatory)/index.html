@@ -11,19 +11,19 @@
 <body>
 
     <header>
-        <h2>Petrol Calculator</h2>
+        <h2>Petrol Calculator</h2> <!--heading; title of the page-->
     </header>
 
     <div class="calculator">
         <br>
-        <label for="petrol_cost">Cost per liter:</label>
-        <input type="number" id="petrol_cost" step="0.01" value="1.72">
-        <label for="liters">Liters purchased:</label>
-        <input type="number" id="liters" step="0.01" value="0">
-        <button onclick="calculate_total()">Calculate</button>
-        <p id="total_cost">Total cost: $ 0.00</p>
+        <label for="petrol_cost">Cost per liter:</label> <!--label for petrol cost input-->
+        <input type="number" id="petrol_cost" step="0.01" value="1.72"> <!--input field for petrol cost per liter with a default value of 1.72-->
+        <label for="liters">Liters purchased:</label> <!--label for liters input-->
+        <input type="number" id="liters" step="0.01" value="0"> <!--input field for liters purchased-->
+        <button onclick="calculate_total()">Calculate</button> <!--button to calculate input values-->
+        <p id="total_cost">Total cost: $ 0.00</p> <!--desplays total cost-->
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--external javascript-->
 </body>
 </html>
