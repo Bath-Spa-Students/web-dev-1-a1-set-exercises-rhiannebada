@@ -1,33 +1,33 @@
 body {
     font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
-    display: flex;
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    justify-content: center;
+    display: flex; /*flexbox for layout to easily align and position elements*/
+    background-image: url(background.jpg); /*sets background image*/
+    background-repeat: no-repeat; /*prevents background image from repeating*/
+    background-size:cover; /*image to cover entire backgorund*/
+    justify-content: center; /*centers contents*/
 }
 
-header {
-    text-align: center;
-    margin-top: 150px;
-    width: 100%;
-    position: fixed;
+header { /*style header*/
+    text-align: center; /*center aligns text*/
+    margin-top: 150px; 
+    width: 100%; /*makes header span the entire width of its container*/
+    position: fixed; /*remains in place when scrolling*/
     background-color: #0A7FD1;
-    box-shadow: 0 2px 4px rgb(89, 89, 89);
-    max-width: 660px;
-    color: white;
-    border: 3px solid rgb(207, 50, 50);
+    box-shadow: 0 2px 4px rgb(89, 89, 89); /*shadow effect*/
+    max-width: 660px; /*limits the maximum width of the header to 660 pixels*/
+    color: white; /*text color*/
+    border: 3px solid rgb(207, 50, 50); /*border around the header; color of the border*/
 }
 
-.calculator {
-    background-color: rgb(255, 255, 255, 0.7);
+.calculator { /*style calculator section*/
+    background-color: rgb(255, 255, 255, 0.7); /*semi transparent white background*/
     padding: 20px;
     box-shadow: 0 2px 4px rgb(89, 89, 89);
     margin-top: 250px;
     position: fixed;
 }
 
-button {
+button { /*style button*/
     background-color: #77C522;
     color: white;
     padding: 5px;
@@ -37,5 +37,5 @@ button {
 }
 
 button:hover {
-    background-color: #EDA912;
+    background-color: #EDA912; /*change background colour of buttons on hover*/
 }
