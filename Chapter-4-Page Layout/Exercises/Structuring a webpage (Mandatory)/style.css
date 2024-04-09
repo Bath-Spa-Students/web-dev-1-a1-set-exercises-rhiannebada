@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif; /*sets arial for all fonts*/
+    font-weight: 400; /*sets font wight to 400*/
     margin:0; /*removes default margin*/
     padding:0; /*removes default padding*/
 }
@@ -17,6 +18,7 @@ header { /*style for header*/
 
 header h1 { /*style for h1 element/s inder header*/
     font-family: Tahoma, sans-serif; /*sets font to tahoma*/
+    font-weight: 700; 
     margin-left: 590px;
     margin-right: 590px;
     border-bottom: 3px solid #ffffff;
