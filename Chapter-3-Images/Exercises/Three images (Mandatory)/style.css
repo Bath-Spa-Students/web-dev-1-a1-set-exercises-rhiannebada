@@ -1,68 +1,68 @@
 body {
-    text-align: center;
-    font-size: smaller;
+    text-align: center; /*center aligns text*/
+    font-size: smaller; /*sets font size smaller*/
     font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
-    background-color: rgb(232, 232, 229);
+    background-color: rgb(232, 232, 229); /*background colour*/
 }
 
-header {
+header { /*style for header*/
     text-align: center;
     background-color: rgb(139, 184, 208);
-    padding: 5px;
-    margin-left: 50px;
+    padding: 5px; /*adds 5px padding all sides*/
+    margin-left: 50px; /*50px left margin*/
     margin-right: 50px;
-    color: white;
+    color: white; /*text colour*/
 }
 
-h3 {
+h3 { /*style for all h3 elements*/
     color: rgb(139, 184, 208);
 }
 
-hr {
+hr { /*style all horizontal lines*/
     color: rgb(139, 184, 208);
     margin-left: 50px;
     margin-right: 50px;
 }
 
-img {
+img { /*style for all images*/
     border: solid 4px;
     border-color: rgb(139, 184, 208);
 }
 
-figure {
-    display: inline-block;
+figure { /*style for figure elements*/
+    display: inline-block; /*displays figures as inline block*/
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.filter1, .filter2, .filter3 {
+.filter1, .filter2, .filter3 { /*style for all 3 filter classes*/
     text-align: center;
 }
 
-.original img {
-    max-width: 100%;
-    height: auto;
+.original img { /*style for images under class original*/
+    max-width: 100%; /*sets max width to 100%*/
+    height: auto; 
     margin: 20px;
 }
 
-.filter1 img {
+.filter1 img { /*style for images under filter1 class*/
     max-width: 100%;
     height: auto;
-    filter: grayscale(100%);
+    filter: grayscale(100%); /*applies grayscale/black and white fiter of 100%*/
     margin: 20px;
 }
 
-.filter2 img {
+.filter2 img { /*style for images under filter1 class*/
     max-width: 100%;
     height: auto;
-    filter: invert(80%);
+    filter: invert(100%); /*applies invert fiter of 100%*/
     margin: 20px;
 }
 
-.filter3 img {
+.filter3 img { /*style for images under filter1 class*/
     max-width: 100%;
     height: auto;
-    filter: sepia(80%);
+    filter: sepia(100%); /*applies sepia fiter of 100%*/
     margin: 20px;
 }
