@@ -1,133 +1,130 @@
 body {
-  background-color: #1f1f1f;
+  background-color: #1f1f1f; /*background color*/
   font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
-  color: white;
+  color: white; /*text color*/
 }
 
-nav {
-  position: fixed;
-  background-color: #1f1f1f;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 10px 0;
+nav { /*style navigation section*/
+  position: fixed; /*makes the navigation bar fixed; non scrollable*/
+  background-color: #1f1f1f; /*background color*/
+  top: 0; /*aligns to top*/
+  left: 0; /*aligns to left*/
+  width: 100%; /*cover entire width*/
+  z-index: 1000; /*ensures nav bar is above other contents*/
+  padding: 10px 0; /*adds padding*/
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
+nav ul { /*style list*/
+  list-style-type: none; /*removes default list style*/
+  margin: 0; /*removes default margin*/
+  padding: 0; /*removes default padding*/
+  background-color: #333; /*background color*/
 }
 
-nav ul li {
-  float: left;
-  position: relative; /* Added to ensure the dropdown is positioned correctly */
+nav ul li { 
+  float: left; /*float list items to left*/
+  position: relative; /*added to ensure the dropdown is positioned correctly*/
 }
 
 nav ul li a {
-  display: block;
-  color: white;
-  text-align: left;
+  display: block; /*displays links as block elements*/
+  color: white; 
+  text-align: left; /*aligns text to the left*/
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: none; /*removes underline*/
 }
 
 nav ul li a:hover {
-  background-color: #bb85d2;
+  background-color: #bb85d2; /*changes background colour on hover*/
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
+.dropdown-content { /*style drop down contents*/
+  display: none; /*hides dropdown content by default*/
+  position: absolute; /*positions absolutely*/
   background-color: #313131;
-  min-width: 160px;
-  z-index: 1; /* Added to ensure the dropdown is above other content */
+  min-width: 160px; /*sets minimum width*/
+  z-index: 1; /*added to ensure the dropdown is above other content*/
 }
 
-.dropdown-content a {
+.dropdown-content a { /*style links under genres*/
   color: white;
   padding: 12px 16px;
   display: block;
   text-decoration: none;
 }
 
-/* Adjusted selector to target only the dropdown content of the hovered item */
 nav ul li:hover .dropdown-content {
   display: block;
 }
 
-/* Adjusted selector to target only the dropdown content of the hovered item */
 nav ul li:hover .dropdown-content a:hover {
-  background-color: #85d289;
+  background-color: #85d289; /*changer background color on hover*/
 }
 
-.heading {
-  color: white;
-  text-align: left;
+.heading { /*style heading section*/
+  color: white; /*text color*/
+  text-align: left; /*aligns text to left*/
   margin-top: 20px;
   padding-left: 20px;
 }
 
-.heading p {
+.heading p { /*style paragraph under heading class*/
   margin-bottom: 5px;
 }
 
-.heading h1 {
-  font-size: 2.5rem;
+.heading h1 { /*style heading 1 under heading class*/
+  font-size: 2.5rem; /*custom font size*/
   margin-top: 0;
 }
 
-.play-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #bb85d2; /* Adjust button color as needed */
+.play-button { /*style play button*/
+  display: inline-block; /*inline block element*/
+  padding: 10px 20px; 
+  background-color: #bb85d2; 
   color: #fff;
-  text-decoration: none;
-  margin-top: 10px; /* Adjust margin as needed */
-  font-size: 18px;
+  text-decoration: none; /*removes underline*/
+  margin-top: 10px;
 }
 
 .play-button:hover {
-  background-color: #85d289; /* Adjust hover color as needed */
+  background-color: #85d289; /*changes background color on hover*/
 }
 
-.overview {
+.overview { /*style overview section*/
   text-align: left;
   margin: 20px;
   color: white;
   background-color: #353535;
   padding: 20px;
-  border: 1px solid #ccc; /* Add border for each episode box */
-  text-align: justify;
+  border: 1px solid #ccc; /*adds border*/
+  text-align: justify; /*justifies text*/
 }
 
-.overview h2, .team h2 {
+.overview h2, .team h2 { /*style heading 2s*/
   margin-top: 0;
 }
 
 hr {
-  color: #bb85d2;
+  color: #bb85d2; /*change horizontal line color*/
 }
 
-h3 { 
+h3 { /*style all heading level 3*/
   margin-left: 20px;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /*custom font size*/
   text-align: center;
 }
 
-#casts {
+#casts { /*style cast section*/
   text-align: left;
   margin: 10px;
   padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: flex; /*to create flexible layout*/
+  flex-wrap: wrap; /*flexible items will wrap if necessary*/
+  justify-content: flex-start; /*justify items to right*/
 }
 
 #casts p {
-  font-size: small;
+  font-size: small; /*changes font size smaller than default*/
 }
 
 #casts h5 {
@@ -135,85 +132,78 @@ h3 {
   color: #85d289;
 }
 
-#cast {
+#cast { /*style all containers for cast section*/
   text-align: left;
   margin: 12px;
   padding: 20px;
-  width: calc(29% - 10px); /* Adjust width as needed */
-  background-color: #353535; /* Default background color */
-  border: 1px solid #ccc; /* Add border for each episode box */
+  width: calc(29% - 10px); /*adjust width of box*/
+  background-color: #353535; 
+  border: 1px solid #ccc; 
   text-decoration: none;
+  display: inline-block
 }
 
-#team {
+#team { /*style all containers for team section*/
   text-align: left;
   margin: 20px;
   color: white;
   background-color: #353535;
   padding: 20px;
-  border: 1px solid #ccc; /* Add border for each episode box */
+  border: 1px solid #ccc; 
   text-align: justify;
 }
 
-#episodes {
+#episodes { /*style episodes section*/
   text-align: left;
   margin: 20px;
   padding: 20px;
-}
-
-#episodes p {
-  font-size: small;
-}
-
-
-#episodes {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
+#episodes p { /*style all paragraph under episodes*/
+  font-size: small;
+}
+
 #episode {
-  width: calc(31% - 21px); /* Adjust width as needed */
+  width: calc(31% - 21px); /*adjusts width of each episode container*/
   margin: 10px;
   padding: 10px;
-  background-color: #353535; /* Default background color */
-  border: 1px solid #ccc; /* Add border for each episode box */
+  background-color: #353535; 
+  border: 1px solid #ccc; 
   text-decoration: none;
 }
 
-#episode, h4 {
+#episode, h4 { /*episode titles*/
   display: inline-block
 }
 
-#cast {
-  display: inline-block
-}
-
-#episode small {
+#episode small { /*content under episode id with small tag*/
   display: inline-block;
   text-align: right;
   color: #85d289;
-  font-size: 0.6rem;
+  font-size: 0.6rem; /*custom font size*/
 }
 
 
-.play {
+.play { /*play button*/
   display: inline-block;
   padding: 5px 10px 5px 10px;
-  background-color: #bb85d2; /* Adjust button color as needed */
+  background-color: #bb85d2; 
   color: #fff;
   text-decoration: none;
-  margin-top: 10px; /* Adjust margin as needed */
+  margin-top: 10px; 
   font-size: 18px;
   border-radius: 100px;
 }
 
 .play:hover {
-  background-color: #85d289; /* Adjust hover color as needed */
+  background-color: #85d289; /*changes background color on hover*/
 }
 
-#reviews { /* all under <section> follows and displays this style */
-  background-color: #353535; /* Default background color */
+#reviews { /*style for reviews section*/
+  background-color: #353535; 
   padding: 20px;
   margin: 20px;
   text-align: justify;
@@ -223,33 +213,33 @@ h3 {
 }
 
 
-footer {
-  position: fixed;
-  bottom: 0;
+footer { /*style for footer*/
+  position: fixed; /*fixes position of footer; non-scrollable*/
+  bottom: 0; /*removes default bottom margin*/
   left: 0;
-  width: 100%;
+  width: 100%; /*covers entire page width*/
   background-color: #1f1f1f;
   padding: 0;
   text-align: center;
-  z-index: 1000;
+  z-index: 1000; /*ensures footer is above other contents*/
 }
 
-.back {
+.back { /*style for back to the top link*/
 color: #bb85d2;
 text-decoration: none;
 margin: 20px
 }
 
-.back.show {
+.back.show { /*style whenever back to top link is shown*/
 display: inline-block;
 }
 
-.back:hover {
+.back:hover { /*style on hover*/
 text-decoration: underline;
 color: #85d289;
 }
 
-.back:before {
-content: "\25B2"; /* Unicode character for up arrow */
+.back:before { /*style for up arrow icon*/
+content: "\25B2"; /*unicode character for up arrow */
 margin-right: 5px;
 }
