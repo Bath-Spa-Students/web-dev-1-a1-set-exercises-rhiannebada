@@ -1,6 +1,6 @@
 body {
     background-color: #1f1f1f;
-    font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
+    font-family: 'Montserrat', sans-serif; /*text inside body will all be montserrat*/
     color: white;
 }
 
@@ -23,7 +23,7 @@ nav ul {
   
   nav ul li {
     float: left;
-    position: relative; /* Added to ensure the dropdown is positioned correctly */
+    position: relative; /*ensures dropdown is positioned correctly*/
   }
   
   nav ul li a {
@@ -43,7 +43,7 @@ nav ul {
     position: absolute;
     background-color: #313131;
     min-width: 160px;
-    z-index: 1; /* Added to ensure the dropdown is above other content */
+    z-index: 1; /*ensures the dropdown contents are above other contents */
   }
   
   .dropdown-content a {
@@ -53,12 +53,10 @@ nav ul {
     text-decoration: none;
   }
   
-  /* Adjusted selector to target only the dropdown content of the hovered item */
   nav ul li:hover .dropdown-content {
     display: block;
   }
   
-  /* Adjusted selector to target only the dropdown content of the hovered item */
   nav ul li:hover .dropdown-content a:hover {
     background-color: #85d289;
   }
@@ -80,15 +78,15 @@ nav ul {
   .title {
     display: inline-block;
     padding: 5px 10px 5px 10px;
-    background-color: #bb85d2; /* Adjust button color as needed */
+    background-color: #bb85d2; 
     color: #fff;
     text-decoration: none;
-    margin-top: 10px; /* Adjust margin as needed */
+    margin-top: 10px; 
     font-size: 18px;
   }
   
   .title:hover {
-    background-color: #85d289; /* Adjust hover color as needed */
+    background-color: #85d289; 
   }
 
   hr {
@@ -135,9 +133,9 @@ footer {
   text-align: left;
   margin: 12px;
   padding: 20px;
-  width: calc(29% - 10px); /* Adjust width as needed */
-  background-color: #353535; /* Default background color */
-  border: 1px solid #ccc; /* Add border for each episode box */
+  width: calc(29% - 10px); 
+  background-color: #353535; 
+  border: 1px solid #ccc; 
   text-decoration: none;
 }
 
@@ -147,7 +145,7 @@ footer {
   color: white;
   background-color: #353535;
   padding: 20px;
-  border: 1px solid #ccc; /* Add border for each episode box */
+  border: 1px solid #ccc; 
   text-align: justify;
 }
 
@@ -177,11 +175,11 @@ footer {
 }
 
 #episode {
-  width: calc(31% - 21px); /* Adjust width as needed */
+  width: calc(31% - 21px); 
   margin: 10px;
   padding: 10px;
-  background-color: #353535; /* Default background color */
-  border: 1px solid #ccc; /* Add border for each episode box */
+  background-color: #353535; 
+  border: 1px solid #ccc; 
   text-decoration: none;
 }
 
@@ -208,20 +206,20 @@ footer {
 .play {
   display: inline-block;
   padding: 5px 10px 5px 10px;
-  background-color: #bb85d2; /* Adjust button color as needed */
+  background-color: #bb85d2; 
   color: #fff;
   text-decoration: none;
-  margin-top: 10px; /* Adjust margin as needed */
+  margin-top: 10px; 
   font-size: 18px;
   border-radius: 100px;
 }
 
 .play:hover {
-  background-color: #85d289; /* Adjust hover color as needed */
+  background-color: #85d289; 
 }
 
-#reviews { /* all under <section> follows and displays this style */
-  background-color: #353535; /* Default background color */
+#reviews { 
+  background-color: #353535; 
   padding: 20px;
   margin: 20px;
   text-align: justify;
