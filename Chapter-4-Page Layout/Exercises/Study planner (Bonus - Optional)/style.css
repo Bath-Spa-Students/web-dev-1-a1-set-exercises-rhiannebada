@@ -1,107 +1,106 @@
 body {
     font-family: 'Montserrat', sans-serif; /* text inside body will all be montserrat */
-    margin: 0px;
-    background-color:rgb(233, 233, 233, 0.5);
-    padding: 0;
-    background-image: url(background.png); 
-    background-size:contain;
+    margin: 0; /*removes default margin*/
+    padding: 0; /*removes default padding*/
+    background-image: url(background.png); /*sets image background*/
+    background-size:contain; /*sets background size to contain*/
 }
 
-header {
-    background-color:#E1C7C7;
-    font-family: 'Galada', cursive;
-    color: white;
-    text-align: center;
+header { /*style for header*/
+    background-color:#E1C7C7; /*sets background colour*/
+    font-family: 'Galada', cursive; /*galada font for header*/
+    color: white; /*text colour*/
+    text-align: center; /*aligns text to center*/
     padding-left: 20px;
     padding-top: 2px;
     padding-bottom: 2px;
-    position: fixed;
-    top: 0;
+    position: fixed; /*stays in position even when scrolled*/
+    top: 0; /*aligns to top*/
     left: 0;
-    width: 100%;
-    z-index: 1000;
+    width: 100%; /*covers entire width*/
+    z-index: 1000; /*ensures header stays above other contents*/
 }
 
-.modules hr {
-    border: none;
-    background-color: #ffffff;
-    height: 2px;
-    margin: 10px -500px 10px 0px;
+.modules hr { /*style for horizontal lines within module class*/
+    border: none; /*removes default border*/
+    background-color: #ffffff; 
+    height: 2px; 
+    margin: 10px -800px 10px 0px;
 }
 
-hr {
+hr { /*style for all horizontal rules*/
     border: none;
     background-color:rgb(165, 73, 73);
     height: 2px;
-    margin: 10px -500px 10px 0px;
+    margin: 10px -800px 10px 0px;
 }
 
-nav {
-    background-color:#B2CAB1;
-    border-radius: 5px;
+nav { /*style for navigation*/
+    background-color:#B2CAB1; 
+    border-radius: 5px; /*adds rounded corners*/
     margin: 20px;
     padding: 10px;
     margin-bottom: 0;
-    box-shadow: -3px 2px 2px rgb(158, 158, 158);
+    box-shadow: -3px 2px 2px rgb(158, 158, 158); /*adds gray shadow*/
 }
 
-nav ul {
-    list-style-type: none;
+nav ul { /*style for unordered lists within navigation*/
+    list-style-type: none; /*removes default list type (bullet points)*/
     text-align: center;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
-    display: inline-block;
+nav ul li { /*style for li elements under nav*/
+    display: inline-block; /*display to inline-block*/
 }
 
-nav ul li a:hover {
-    color:black;
+nav ul li a:hover { 
+    color:black; /*changes text colour on hover*/
 }
 
-nav ul li a {
-    text-decoration: none;
+nav ul li a { /*style for links inder nav*/
+    text-decoration: none; /*removes underline*/
     color: white;
-    font-weight: 700;
-    font-size: small;
+    font-weight: 700; /*changes font weight to bold*/
+    font-size: small; /*changes font size to small*/
     padding: 80px 80px;
 }
 
-.homepage {
-    display: flex;
-    justify-content: space-between;
+.homepage { /*style for homepage class*/
+    display: flex; /*to expand items; fill or shrink in available space*/
+    justify-content: space-between; /*distributes extra spaces between items*/
     padding: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*allows multiple lines as necessary*/
 }
 
 
-.column {
-    flex: 1;
+.column { /*style for column class*/
+    flex: 1; /*enables fill all available spaces*/
     padding: 10px;
     background-color: #B2CAB1;
     margin: 5px;
     margin-bottom: 0;
-    border-radius: 5px;
+    border-radius: 5px; /*adds rounded corners*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-start; /*aligns flex items starting from the beginniing of container*/
     background-size: contain;
     box-shadow: -3px 2px 2px rgb(158, 158, 158);
 }
 
-.topic {
+.topic { /*style for topic class*/
     width: 250px;
 }
 
-.topic h4 {
+.topic h4 { /*style for h4 elements within topic class*/
     color:#E1C7C7;
     margin-bottom: 5px;
 }
 
-.calendar {
-    width: 1030px;
-    height: fit-content;
+.calendar { /*style for calendar class*/
+    width: 1030px; /*width of calendar container*/ 
+    height: fit-content; /*expands height vertically to fit its contents*/
     background-color:#fafafa;
     padding-left: 15px;
     padding-right: 15px;
@@ -112,19 +111,19 @@ nav ul li a {
     box-shadow: -2px 2px 2px rgb(158, 158, 158);
 }
 
-.prev, .next {
+.prev, .next { /*style for arrows*/
     font-size: 15px;
     margin-right: 10px;
     margin-left: 10px;
     color: #B2CAB1;
-    cursor: pointer;
+    cursor: pointer; /*to indicate that the element is clickable (prototype)*/
 }
 
 .prev:hover, .next:hover {
-    color: black;
+    color: black; /*changes font color on hover*/
 }
 
-.notes {
+.notes { /*style for notes class*/
     display:inline-block;
     background-color: #fafafa;
     margin-bottom: 20px;
@@ -135,31 +134,27 @@ nav ul li a {
     box-shadow: -2px 2px 2px rgb(158, 158, 158);
 }
 
-.notes h4 {
+.notes h4 { /*style for h4 elements within notes class*/
     padding-top: 0px;
     text-align: center;
     color: #709c6e;
 }
 
-.notes hr {
-    border-top: 1px dashed rgb(165, 73, 73);
+.notes hr { /*style for horizontal lines within notes class*/
+    border-top: 1px dashed rgb(165, 73, 73); /*coloured dashed 1px top border*/
     background-color: white;
     padding-left: 100px;
     padding-right: 100px;
     margin: 10px;
 }
 
-.notes h3 {
+.notes h3 { /*style for h3 elements within notes class*/
     margin-top: 0;
 }
 
-.checkbox {
-    margin-bottom: 10px;
-}
-
-.topics {
+.topics { /*style for topics class*/
     background-color: #fafafa;
-    width: calc(100% - 10px);
+    width: calc(100% - 10px); /*responsive width*/
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 2px;
@@ -170,15 +165,15 @@ nav ul li a {
     margin-right: 0px;
     margin-bottom: 10px;
     box-shadow: -3px 2px 2px rgb(158, 158, 158);
-    height:fit-content;
+    height:fit-content; 
 }
 
-.topics ul li {
-    font-size: small;
+.topics ul li { /*style for li elements under topic class*/
+    font-size: small; 
     margin-top: 0px;
 }
 
-.modules {
+.modules { /*style for modules class*/
     background-color:#E1C7C7;
     padding-left: 20px;
     padding-right: 20px;
@@ -193,11 +188,11 @@ nav ul li a {
     height:fit-content;
 }
 
-.modules h4 {
+.modules h4 { /*style for h4 elements under modules class*/
     color: #ffffff;
 }
 
-.modules a {
+.modules a { /*style for links within modules class*/
     background-color:rgb(165, 73, 73);
     border-radius: 20px;
     padding: 5px;
@@ -211,43 +206,40 @@ nav ul li a {
     background-color: #B2CAB1;
 }
 
-table {
-    border-collapse: collapse;
+table { 
+    border-collapse: collapse; /*merges adjacent cell borders to single*/
     width: 100%;
 }
 
-th, td {
-    border: 1px solid rgb(165, 73, 73);
+th, td { /*style for table headers and data cells*/
+    border: 1px solid rgb(165, 73, 73); /*adds brownish 1px border*/
     text-align: center;
     padding: 8px;
     font-size: small;
     background-color: #ffffff;
 }
 
-th {
+th { /*style for table header cells*/
     background-color:#E1C7C7;
     color:#ffffff;
 }
 
-caption {
-    font-weight: bold;
+caption { /*style for all caption*/
+    font-weight: bold; 
     font-size: larger;
     margin-bottom: 10px;
-}
-
-.schedule {
-    background-color: #E9E9E9;
-}
-
-.important {
-    background-color:#B2CAB1;
-}
-
-caption {
     color:rgb(165, 73, 73);
 }
 
-footer {
+.schedule { /*style for schedule class*/
+    background-color: #E9E9E9;
+}
+
+.important { /*style for important class*/
+    background-color:#B2CAB1; 
+}
+
+footer { /*style for footer*/
     background-color: #E1C7C7;
     font-size: small;
     padding: 0px;
