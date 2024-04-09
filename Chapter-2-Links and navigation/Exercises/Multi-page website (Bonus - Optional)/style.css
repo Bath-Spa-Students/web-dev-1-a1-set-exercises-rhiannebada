@@ -175,7 +175,7 @@ h3 { /*style all heading level 3*/
   text-decoration: none;
 }
 
-#episode, h4 { /*episode titles*/
+#episode, h4 { /*episode numbers*/
   display: inline-block
 }
 
