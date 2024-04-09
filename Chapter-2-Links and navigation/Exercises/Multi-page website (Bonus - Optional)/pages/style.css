@@ -23,7 +23,7 @@ nav ul {
   
   nav ul li {
     float: left;
-    position: relative; /* Added to ensure the dropdown is positioned correctly */
+    position: relative; 
   }
   
   nav ul li a {
@@ -43,7 +43,7 @@ nav ul {
     position: absolute;
     background-color: #313131;
     min-width: 160px;
-    z-index: 1; /* Added to ensure the dropdown is above other content */
+    z-index: 1; 
   }
   
   .dropdown-content a {
@@ -53,12 +53,10 @@ nav ul {
     text-decoration: none;
   }
   
-  /* Adjusted selector to target only the dropdown content of the hovered item */
   nav ul li:hover .dropdown-content {
     display: block;
   }
   
-  /* Adjusted selector to target only the dropdown content of the hovered item */
   nav ul li:hover .dropdown-content a:hover {
     background-color: #85d289;
   }
@@ -82,15 +80,15 @@ nav ul {
 .play-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #bb85d2; /* Adjust button color as needed */
+    background-color: #bb85d2; 
     color: #fff;
     text-decoration: none;
-    margin-top: 10px; /* Adjust margin as needed */
+    margin-top: 10px; 
     font-size: 18px;
   }
   
   .play-button:hover {
-    background-color: #85d289; /* Adjust hover color as needed */
+    background-color: #85d289; 
   }
   
   .overview {
@@ -99,7 +97,7 @@ nav ul {
     color: white;
     background-color: #353535;
     padding: 20px;
-    border: 1px solid #ccc; /* Add border for each episode box */
+    border: 1px solid #ccc; 
     text-align: justify;
   }
   
@@ -126,7 +124,6 @@ nav ul {
     font-size: small;
   }
 
-/* style.css */
 .episodes {
     display: flex;
     flex-wrap: wrap;
@@ -134,11 +131,11 @@ nav ul {
   }
   
   .episode {
-    width: calc(31% - 21px); /* Adjust width as needed */
+    width: calc(31% - 21px); 
     margin: 10px;
     padding: 10px;
-    background-color: #353535; /* Default background color */
-    border: 1px solid #ccc; /* Add border for each episode box */
+    background-color: #353535; 
+    border: 1px solid #ccc; 
     text-decoration: none;
   }
 
@@ -156,16 +153,16 @@ nav ul {
   .play {
     display: inline-block;
     padding: 5px 10px 5px 10px;
-    background-color: #bb85d2; /* Adjust button color as needed */
+    background-color: #bb85d2; 
     color: #fff;
     text-decoration: none;
-    margin-top: 10px; /* Adjust margin as needed */
+    margin-top: 10px; 
     font-size: 18px;
     border-radius: 100px;
   }
   
   .play:hover {
-    background-color: #85d289; /* Adjust hover color as needed */
+    background-color: #85d289; 
   }
 
 footer {
@@ -195,6 +192,6 @@ footer {
   }
   
   .back:before {
-  content: "\25B2"; /* Unicode character for up arrow */
+  content: "\25B2"; /*unicode character for up arrow*/
   margin-right: 5px;
   }
