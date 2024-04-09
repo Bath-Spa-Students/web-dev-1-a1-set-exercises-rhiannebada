@@ -1,58 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
+    font-family: Arial, sans-serif; /*sets arial for all fonts*/
+    margin:0; /*removes default margin*/
+    padding:0; /*removes default padding*/
 }
 
-header {
-    background-color: #17072b;
-    color: #ffffff;
+header { /*style for header*/
+    background-color: #17072b; /*colour of background*/
+    color: #ffffff; /*text colour*/
     padding: 20px;
-    text-align: center;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
+    text-align: center; /*aligns text to center*/
+    position: fixed; /*fixes header position, non-scrollable*/
+    z-index: 1000; /*ensures header is above other contents*/ 
+    top: 0; /*aligns to top*/
+    width: 100%; /*covers entire width*/
 }
 
-header h1 {
-    font-family: Tahoma, sans-serif;
+header h1 { /*style for h1 element/s inder header*/
+    font-family: Tahoma, sans-serif; /*sets font to tahoma*/
     margin-left: 590px;
     margin-right: 590px;
     border-bottom: 3px solid #ffffff;
     padding-bottom: 0px;
 }
 
-nav {
+nav { /*style for navigation*/
     text-align: center;
 
 }
-nav ul {
-    list-style-type: none;
+nav ul { /*style for unordered lists within navigation*/
+    list-style-type: none; /*removes default list style (bulletpoints)*/
     padding: 0;
 }
 
-nav ul li {
+nav ul li { /*style for lists under navigation*/
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li:last-child {
+nav ul li:last-child { /*removes right margin from the last li element*/
     margin-right: 0;
 }
 
-nav ul li a {
+nav ul li a { /*style for links*/
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none; /*removes underline*/
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+main { /*style for main section*/
+    /*allow flex items to wrap to multiple lines as necessary*/
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
-.welcome{
+.welcome{ /*style for welcome class*/
     width: 750px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -63,19 +64,19 @@ main {
     color: #000000;
 }
 
-.welcome h2 {
-    border-bottom: 2px solid #000000;
+.welcome h2 { /*style h2 elements under welcome class*/
+    border-bottom: 2px solid #000000; /*sets bottom border size and color*/
     padding-bottom: 0px;
     margin-right: 645px;
 }
 
-.welcome img {
+.welcome img { /*style for image within welcome class*/
     width: 755px;
 }
 
-aside {
-    float: right;
-    width: calc(40% - 20px);
+aside { /*style for aside section*/
+    float: right; /*elements to float on right side*/
+    width: calc(40% - 20px); /*sets responsive width of the section*/ 
     margin-top: 20px;
     margin-right: 0;
     margin-bottom: 90px;
@@ -86,22 +87,22 @@ aside {
     color: #ffffff;
 }
 
-aside img {
+aside img { /*style for image under aside section*/
     width: 200px;
     margin-left: 10px;
 }
 
-aside h2 {
+aside h2 { /*style for h2 elements under aside section*/
     border-bottom: 2px solid #ffffff;
     padding-bottom: 0px;
     margin-right: 465px;
 }
 
-.lineup article {
+.lineup article { /*style for lineup articles*/
     margin-bottom: 20px;
 }
 
-footer {
+footer { /*style for footer*/
     background-color: #8c15e9;
     color: #ffffff;
     text-align: center;
