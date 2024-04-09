@@ -15,7 +15,7 @@
         margin-top: -20px;
         position: absolute;
         color: white;
-        font-family: 'Roboto Condensed Light', sans-serif;
+        font-family: 'Roboto Condensed Light', sans-serif; /* sets font to roboto */
         font-weight: 300;
     }
 
