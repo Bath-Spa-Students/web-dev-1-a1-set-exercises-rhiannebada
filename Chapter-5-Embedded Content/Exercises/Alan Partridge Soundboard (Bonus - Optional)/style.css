@@ -1,6 +1,6 @@
 body {
   background-color:aliceblue;
-  font-family: 'Roboto Condensed Light', sans-serif;
+  font-family: 'Roboto Condensed Light', sans-serif; /* text inside body will all be roboto */
   color: black;
   text-align: center;
   background-image: url("background.jpg");
