@@ -1,67 +1,67 @@
     body {
-        height: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #cc642d;
-        background-image: url("media/enhypen.jpeg");
-        background-repeat: no-repeat;
-        background-size:cover;
+        height: 100%; /*responsive height*/
+        margin: 0; /*removes default margin*/
+        display: flex; /*enables multiples lines as necessary*/
+        justify-content: center; /*center justifies contents*/
+        align-items: center; /*aligns items to left*/
+        background-color: #cc642d; /*background colour*/
+        background-image: url("media/enhypen.jpeg"); /*applies image as background*/
+        background-repeat: no-repeat; /*prevents image to repeat*/
+        background-size:cover; /*covers entire page*/
         }
 
-    .title {
+    .title { /*style for title class*/
         text-align: center;
         margin-top: -20px;
-        position: absolute;
+        position: absolute; /*positions element to absolute*/
         color: white;
-        font-family: 'Roboto Condensed Light', sans-serif; /* sets font to roboto */
-        font-weight: 300;
+        font-family: 'Roboto Condensed Light', sans-serif; /*sets font to roboto */
+        font-weight: 300; 
     }
 
-    .video {
+    .video { /*style for video class*/
         margin-top: 800px;
         margin-bottom: 200px;
         position: relative;
-        width: 80%;
+        width: 80%; /*responsive width*/
         max-width: 800px;
         height: auto;
         margin-left: auto;
         margin-right: auto;
     }
 
-   video {
+   video { /*style for video*/
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px; /*rounded corner*/
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.3); /*adds back semitransparent shadow*/
+    }
+
+    #videoPoster { /*style for video poster*/
+        position: absolute;
+        top: 0; /*top margin*/
+        left: 0; 
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
-        box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+        display: none; /*hides poster by default*/
     }
 
-    #videoPoster {
+    #controls { /*style for controls*/
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-        display: none; /* Hide by default */
-    }
-
-    #controls {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
+        bottom: 20px; /*bottom margin*/
+        left: 50%; /*postions to left 50%*/
+        transform: translateX(-50%); /*repositions element along horizontal axis*/
+        background-color: rgba(0, 0, 0, 0.5); 
         padding: 10px;
         border-radius: 5px;
-        z-index: 1; /* Ensure button controls are on top */
+        z-index: 1; /*ensure button controls are on top*/
     }
     
 
-    #enhypen { 
+    #enhypen { /*style for element with enhypen id*/
         padding-left: 300px;
         padding-right: 300px;
         padding-top: 1350px;
@@ -72,13 +72,13 @@
         font-weight: 300;
     }
 
-    footer {
-        text-align: center;
-        font-size: small;
-        color: white;
+    footer { /*style for footer*/
+        text-align: center; /*aligns text to center*/
+        font-size: small; /*sets font size to small*/
+        color: white; /*text colour*/
         position: absolute;
         margin-bottom: 5px;
         margin-top: 1700px;
-        font-family: 'Roboto Condensed Light', sans-serif;
-        font-weight: 300;
+        font-family: 'Roboto Condensed Light', sans-serif; /*sets roboto as font*/
+        font-weight: 300; /*sets font weight to light*/
     }
