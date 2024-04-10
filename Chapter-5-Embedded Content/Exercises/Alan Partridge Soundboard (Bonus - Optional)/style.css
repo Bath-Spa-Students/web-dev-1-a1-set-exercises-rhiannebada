@@ -1,75 +1,75 @@
 body {
-  background-color:aliceblue;
+  background-color:aliceblue; /*text colour*/
   font-family: 'Roboto Condensed Light', sans-serif; /* text inside body will all be roboto */
-  color: black;
-  text-align: center;
-  background-image: url("background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  color: black; /*text color*/
+  text-align: center; /*aligns text to center*/
+  background-image: url("background.jpg"); /*applies image as background*/
+  background-repeat: no-repeat; /*prevents image to repeat*/
+  background-position: center; /*positions background to center*/
 }
 
-.header {
+.header { /*style for header class*/
   margin: 30px;
   padding: 30px;
 }
 
-h1 {
-  text-align: center;
+h1 { /*style for all h1 elements*/
+  text-align: center; 
   background-color: #e7d560;
-  padding: 10px;
-  border-radius: 5px;
-  border: 3px solid #fbf8e7;
+  padding: 10px; /*adds padding*/
+  border-radius: 5px; /*rounded corners*/
+  border: 3px solid #fbf8e7; /*adds white 3px border*/
   color: white;
-  box-shadow: 0px 2px 4px rgb(66, 66, 66);
+  box-shadow: 0px 2px 4px rgb(66, 66, 66); /*adds coloured shadow to box*/
 }
 
-.soundboard {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-left: 60px;
+.soundboard { /*style for soundboard class*/
+  display: grid; /*display soundboard containers as grid*/
+  grid-template-columns: repeat(3, 1fr); /*3 columns*/
+  gap: 20px; /*space between columns*/
+  margin-left: 60px; 
   margin-right: 60px;
 }
 
-.soundboard-container {
+.soundboard-container { /*style for soundboard container class*/
   background-color: #fbf8e7;
   border-radius: 5px;
   border: 3px solid #ebe185;
   box-shadow: 0px 2px 4px rgb(66, 66, 66);
-  cursor: pointer;
+  cursor: pointer; /*sets cursor to pointer indicating as clickable*/
   padding: 20px;
   margin: 5px;
   text-align: center;
 }
 
-.soundboard-container:hover {
-  border: 3px solid #a46fa3;
+.soundboard-container:hover { 
+  border: 3px solid #a46fa3; /*changes border style on hover*/
 }
 
-.button:hover {
-  background-color: #fbe7f3;
+.button:hover { 
+  background-color: #fbe7f3; /*changes background colour on hover*/
 }
 
-.button {
-  display: block;
-  width: 100%;
+.button { /*style for button to play*/
+  display: block; /*displays as block element*/
+  width: 100%; /*covers entire width*/
   padding: 40px;
   text-align: center;
-  font-size: medium;
+  font-size: medium; /*sets font size to medium*/
   background-color: #fbe7f3;
-  border: none;
+  border: none; /*removes default border*/
   border-radius: 10px;
 }
 
-.nowplaying {
-  position: fixed;
-  bottom: 60px;
-  right: 70px;
+.nowplaying { /*style for nowplaying class*/
+  position: fixed; /*fixes position*/
+  bottom: 60px; /*bottom margin*/
+  right: 70px; /*right margin*/
   background-color: #e7d560;
   border: 3px solid #fbf8e7;
   box-shadow: 0px 2px 4px rgb(66, 66, 66);
   color: white;
   padding: 10px;
   border-radius: 5px;
-  font-weight: 700;
+  font-weight: 700; /*changes font weight to bold*/
 }
