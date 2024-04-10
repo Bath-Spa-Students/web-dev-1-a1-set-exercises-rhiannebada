@@ -1,74 +1,74 @@
 body {
-    background-color:aliceblue;
+    background-color:aliceblue; /*background colour*/
     font-family: 'Roboto Condensed Light', sans-serif; /* text inside body will all be roboto */
-    color: black;
-    text-align: center;
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    color: black; /*text colour*/
+    text-align: center; /*center aligns text*/
+    background-image: url("background.jpg"); /*sets image as background*/
+    background-repeat: no-repeat; /*prevents image to repeat*/
+    background-position: center; /*positions background to center*/
   }
   
-  .header {
-    margin: 30px;
+  .header { /*style for header class*/
+    margin: 30px; 
     padding: 30px;
   }
   
-  h1 {
+  h1 { /*style for all h1 elements*/
     text-align: center;
     background-color: #e7d560;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgb(66, 66, 66);
+    padding: 10px; /*adds padding*/
+    border-radius: 5px; /*rounded corners*/
+    box-shadow: 0px 2px 4px rgb(66, 66, 66); /*adds coloured shadow to box*/
   }
   
-  .soundboard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  .soundboard { /*style for soundboard class*/
+    display: grid; /*display soundboard containers as grid*/
+    grid-template-columns: repeat(3, 1fr); /*3 columns*/
+    gap: 20px; /*space between columns*/
     background-color: rgb(251, 248, 231, 0.7);
     border-radius: 5px;
     padding: 30px;
     margin-right: 40px;
-    width: 1000px;
+    width: 1000px;/*sets width size*/
     box-shadow: 0px 2px 4px rgb(66, 66, 66);
   }
   
-  .soundboard-container {
+  .soundboard-container { /*style for soundboard container class*/
     background-color: #ebe185;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgb(66, 66, 66);
-    cursor: pointer;
+    cursor: pointer; /*sets cursor to pointer indicating as clickable*/
     padding: 20px;
     margin: 5px;
     text-align: center;
   }
   
   .soundboard-container:hover {
-    border: 3px solid #a46fa3;
+    border: 3px solid #a46fa3; /*changes border style on hover*/
   }
   
   .button:hover {
-    background-color: #fbe7f3;
+    background-color: #fbe7f3; /*changes background colour on hover*/
   }
   
-  .button {
-    display: block;
-    width: 100%;
+  .button { /*style for button to play*/
+    display: block; /*displays as block element*/
+    width: 100%; /*covers entire width*/
     padding: 40px;
     text-align: center;
-    font-size: medium;
+    font-size: medium; /*sets font size to medium*/
     background-color: #fbe7f3;
-    border: none;
+    border: none; /*removes default border*/
     border-radius: 10px;
   }
 
-  .container {
+  .container { /*style for container class*/
     display: flex;
     justify-content: space-between;
     padding: 20px;
   }
 
-  .text-to-speech {
+  .text-to-speech { /*style for text-to-speech class*/
     flex: 1;
     margin-right: 30px;
     margin-left: 60px;
@@ -81,12 +81,12 @@ body {
     border-radius: 5px;
   }
 
-  .text-to-speech button {
+  .text-to-speech button { /*style for button within text-to-speech class*/
     display: block;
     background-color: #ebe185;
     box-shadow: 0px 2px 4px rgb(66, 66, 66);  
     padding: 5px;
     border-radius: 5px;
     margin-top: 10px;
-    border: none;
+    border: none; /*removes default border*/
   }
