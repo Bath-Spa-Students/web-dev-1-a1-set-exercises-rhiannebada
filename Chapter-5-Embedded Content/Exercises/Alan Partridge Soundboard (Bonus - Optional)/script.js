@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() { //event listener ensu
 
             currentAudio = audio; //updates currentAudio variable to the clicked audio
             
-            currentAudioTitle.textContent = audio.parentNode.querySelector('p').textContent;
+            currentAudioTitle.textContent = audio.parentNode.querySelector('p').textContent; //updates text content 
 
         });
     });
