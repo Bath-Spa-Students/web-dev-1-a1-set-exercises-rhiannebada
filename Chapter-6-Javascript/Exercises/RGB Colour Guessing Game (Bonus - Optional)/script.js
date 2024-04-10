@@ -43,31 +43,33 @@ function restartGame() {
     startGame(); //start the game
 }
 
-function displayOptions(correctColor) {
-    const optionsContainer = document.getElementById('options');
-    optionsContainer.innerHTML = '';
+function displayOptions(correctColor) { //displays colour options for player selection
+    const optionsContainer = document.getElementById('options'); //get the container for options
+    optionsContainer.innerHTML = ''; //deletes existing options
 
-    const options = [correctColor];
-    while (options.length < 3) {
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    const options = [correctColor]; //initialize options arrat with correct colour
+    while (options.length < 3) { //ensures there are 3 colour options including the correct answer
+        const randomColor = colors[Math.floor(Math.random() * colors.length)]; //get random colour
+        //checks if random colour is not already in the array
         if (!options.some(option => option.red === randomColor.red && option.green === randomColor.green && option.blue === randomColor.blue)) {
-            options.push(randomColor);
+            options.push(randomColor); //add random colour to array
         }
     }
 
-    shuffleArray(options);
+    shuffleArray(options); //shuffle options array
 
     options.forEach((color) => {
-        const optionDiv = document.createElement('div');
+        const optionDiv = document.createElement('div'); //divelement for the option
         optionDiv.classList.add('option');
-        optionDiv.style.backgroundColor = `rgb(${color.red}, ${color.green}, ${color.blue})`;
-        optionDiv.onclick = () => checkAnswer(color, correctColor);
+        optionDiv.style.backgroundColor = `rgb(${color.red}, ${color.green}, ${color.blue})`; //sets background colour based on color values
+        optionDiv.onclick = () => checkAnswer(color, correctColor); //checks answer
         optionsContainer.appendChild(optionDiv);
     });
 }
 
-function checkAnswer(selectedColor, correctColor) {
-    const feedback = document.getElementById('feedback');
+//check if selected colour matches correct colour
+function checkAnswer(selectedColor, correctColor) { 
+    const feedback = document.getElementById('feedback'); //get the feedback element
     if (selectedColor.red === correctColor.red &&
         selectedColor.green === correctColor.green &&
         selectedColor.blue === correctColor.blue) {
